@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Questions and answers from OrganicBench and chemistry benchmarks.">
+    <meta name="color-scheme" content="light">
+    <title>OrganicBench</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./vendor/katex.min.css">
+    <script src="./vendor/marked.min.js" defer></script>
+    <script src="./vendor/purify.min.js" defer></script>
+    <script src="./vendor/katex.min.js" defer></script>
+    <script src="./vendor/auto-render.min.js" defer></script>
+    <script src="./data.js" defer></script>
+    <script src="./questions.js" defer></script>
+    <script src="./translations.js" defer></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <header class="page-header">
+      <div id="language-toggle" class="language-toggle" role="group" aria-label="Language">
+        <button type="button" data-language="zh" lang="zh-CN" aria-label="中文" aria-pressed="false">ZH</button>
+        <span class="language-divider" aria-hidden="true">|</span>
+        <button type="button" data-language="en" lang="en" aria-label="English" aria-pressed="true">EN</button>
+      </div>
+      <nav class="benchmark-tabs" id="task-tabs" role="tablist" aria-label="Select a task"></nav>
+    </header>
+    <main class="examples" id="task-panel" role="tabpanel" tabindex="0">
+      <nav class="topic-tabs" id="source-tabs" role="tablist" aria-label="Select a benchmark"></nav>
+      <div id="example-panel" role="tabpanel" tabindex="0"><div id="example-pairs"></div></div>
+    </main>
+    <noscript><p class="script-message">Enable JavaScript to select a benchmark and view paired examples.</p></noscript>
+  </body>
+</html>
