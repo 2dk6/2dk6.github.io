@@ -15,6 +15,9 @@ button:focus-visible, a:focus-visible, summary:focus-visible, [tabindex]:focus-v
 ::selection { background: #dce8db; }
 
 .page-header { position: relative; width: min(1240px, calc(100% - 64px)); margin: auto; padding-top: 48px; }
+.comparison-hero { max-width: 850px; margin: 0 auto 18px; }
+.comparison-hero a, .comparison-hero img { display: block; }
+.comparison-hero img { width: auto; height: auto; max-width: 100%; max-height: calc(100svh - 240px); margin-inline: auto; }
 .language-toggle { position: absolute; top: 12px; right: 0; display: inline-flex; align-items: stretch; border: 1px solid #d6d9d1; background: #fff; font-size: 14px; }
 .language-toggle button { min-width: 39px; min-height: 30px; padding: 3px 9px; border: 0; background: transparent; color: #798070; cursor: pointer; }
 .language-toggle button:hover { color: #36553b; background: #f2f6ef; }
